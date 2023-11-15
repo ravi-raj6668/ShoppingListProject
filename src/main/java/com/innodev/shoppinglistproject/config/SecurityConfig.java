@@ -1,4 +1,4 @@
-package com.test.neokred.shoppinglistproject.config;
+package com.innodev.shoppinglistproject.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.test.neokred.shoppinglistproject.config;
+package com.innodev.shoppinglistproject.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

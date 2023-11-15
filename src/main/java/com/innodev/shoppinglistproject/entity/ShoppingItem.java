@@ -1,4 +1,4 @@
-package com.test.neokred.shoppinglistproject.entity;
+package com.innodev.shoppinglistproject.entity;
 
 import jakarta.persistence.*;
 

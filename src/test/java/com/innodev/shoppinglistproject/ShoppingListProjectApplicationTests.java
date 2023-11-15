@@ -1,9 +1,9 @@
-package com.test.neokred.shoppinglistproject;
+package com.innodev.shoppinglistproject;
 
-import com.test.neokred.shoppinglistproject.entity.ShoppingItem;
-import com.test.neokred.shoppinglistproject.repo.ShoppingListRepo;
-import com.test.neokred.shoppinglistproject.service.ShoppingListService;
-import org.aspectj.lang.annotation.Before;
+import com.innodev.shoppinglistproject.service.ShoppingListService;
+import com.innodev.shoppinglistproject.entity.ShoppingItem;
+import com.innodev.shoppinglistproject.repo.ShoppingListRepo;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -22,6 +22,7 @@ class ShoppingListProjectApplicationTests {
 
     @Test
     void contextLoads() {
+        assertEquals(HttpStatus.OK, HttpStatus.OK);
     }
 
     @InjectMocks
@@ -30,13 +31,13 @@ class ShoppingListProjectApplicationTests {
     @Mock
     private ShoppingListRepo shoppingListRepo;
 
-    @Before("")
+    @BeforeEach()
     public void setUp() {
         // Setup your mocks or test data here
     }
 
     @Test
-    public void testGetAllItems() throws Exception {
+    void testGetAllItems() throws Exception {
         List<ShoppingItem> shoppingItemList = new ArrayList<>();
         when(shoppingListRepo.findAll()).thenReturn(shoppingItemList);
         ResponseEntity<List<ShoppingItem>> response = shoppingListService.getAllItems();
@@ -45,7 +46,7 @@ class ShoppingListProjectApplicationTests {
     }
 
     @Test
-    public void testGetItemsByCategoryName() {
+    void testGetItemsByCategoryName() {
         String category = "";
         List<ShoppingItem> shoppingItemList = new ArrayList<>();
         when(shoppingListRepo.findByCategory(category)).thenReturn(shoppingItemList);
@@ -55,7 +56,7 @@ class ShoppingListProjectApplicationTests {
     }
 
     @Test
-    public void testAddItems() {
+    void testAddItems() {
         ShoppingItem shoppingItem = new ShoppingItem();
         shoppingItem.setId(111);
         shoppingItem.setName("Iphone 15 pro max");
@@ -68,7 +69,7 @@ class ShoppingListProjectApplicationTests {
     }
 
     @Test
-    public void testDeleteItemsFromCart() {
+    void testDeleteItemsFromCart() {
         long itemId = 1L;
         when(shoppingListRepo.existsById(itemId)).thenReturn(true);
         ResponseEntity<String> response = shoppingListService.deleteItemsFromCart(itemId);

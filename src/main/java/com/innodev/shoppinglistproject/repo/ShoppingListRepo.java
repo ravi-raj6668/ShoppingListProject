@@ -1,6 +1,6 @@
-package com.test.neokred.shoppinglistproject.repo;
+package com.innodev.shoppinglistproject.repo;
 
-import com.test.neokred.shoppinglistproject.entity.ShoppingItem;
+import com.innodev.shoppinglistproject.entity.ShoppingItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

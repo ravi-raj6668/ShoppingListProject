@@ -1,7 +1,7 @@
-package com.test.neokred.shoppinglistproject.service;
+package com.innodev.shoppinglistproject.service;
 
-import com.test.neokred.shoppinglistproject.entity.ShoppingItem;
-import com.test.neokred.shoppinglistproject.repo.ShoppingListRepo;
+import com.innodev.shoppinglistproject.entity.ShoppingItem;
+import com.innodev.shoppinglistproject.repo.ShoppingListRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

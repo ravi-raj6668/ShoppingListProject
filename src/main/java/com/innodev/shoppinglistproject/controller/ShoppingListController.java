@@ -1,7 +1,7 @@
-package com.test.neokred.shoppinglistproject.controller;
+package com.innodev.shoppinglistproject.controller;
 
-import com.test.neokred.shoppinglistproject.entity.ShoppingItem;
-import com.test.neokred.shoppinglistproject.service.ShoppingListService;
+import com.innodev.shoppinglistproject.entity.ShoppingItem;
+import com.innodev.shoppinglistproject.service.ShoppingListService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
